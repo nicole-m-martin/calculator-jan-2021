@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <script
+      src="https://kit.fontawesome.com/5284888aa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator</title>
+  </head>
+
+  <body id="theBody">
+    <header>
+      <div class="gutter-right logo">
+        <img src="assets/big-logo.png" />
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Calculator!</h1>
+        <i class="fas fa-calculator fa-10x"></i>
+
+        <!-- Addition -->
+        <div class="add-section">
+          <h2>Add!</h2>
+          <input id="add-input-1" type="number" />
+          <i class="fas fa-plus fa-2x"></i>
+          <input id="add-input-2" type="number" />
+          <button id="add-button">Submit</button>
+          <i class="fas fa-equals"></i>
+          <div id="add-results"></div>
+        </div>
+
+        <!-- Subtraction -->
+        <div class="sub-section">
+          <h2>Subtract!</h2>
+          <input id="sub-input-1" type="number" />
+          <i class="fas fa-minus fa-2x"></i>
+          <input id="sub-input-2" type="number" />
+          <button id="sub-button">Submit</button>
+          <i class="fas fa-equals"></i>
+          <div id="sub-results"></div>
+        </div>
+
+        <!-- Division -->
+        <div class="divide-section">
+          <h2>Divide!</h2>
+          <input id="divide-input-1" type="number" />
+          <i class="fas fa-divide fa-2x"></i>
+          <input id="divide-input-2" type="number" />
+          <button id="divide-button">Submit</button>
+          <i class="fas fa-equals"></i>
+          <div id="divide-results"></div>
+        </div>
+
+        <!-- Multiplication -->
+        <div class="multi-section">
+          <h2>Multiply!</h2>
+          <input id="multi-input-1" type="number" />
+          <i class="fas fa-times fa-2x"></i>
+          <input id="multi-input-2" type="number" />
+          <button id="multi-button">Submit</button>
+          <i class="fas fa-equals"></i>
+          <div id="multi-results"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
